@@ -34,8 +34,8 @@ pipeline {
 			}
 		}
         stage('docker deploy') {
-         checkout scm
-			steps {
+		steps {
+		checkout scm
                 echo("Hago Docker Login")
                 sh("docker login --username= ${DOCKER_REGISTRY} --password=${DOCKER_HUB_SECRETS}")
 				sh("docker push ${DOCKER_REGISTRY}/${IMAGE}")
