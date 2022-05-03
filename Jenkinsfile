@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-        NOMBRE='Romina'
+        NOMBRE='RominaElena'
         APELLIDO='Mendez'
         secret=credentials('test') 
     }
