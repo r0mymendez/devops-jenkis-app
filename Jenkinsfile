@@ -5,7 +5,7 @@ pipeline {
        VERSION = readMavenPom().getVersion()
        VERSION_IMAGE="v${VERSION}"
        DOCKER_REGISTRY='romymendez'
-       DOCKER_HUB_SECRETS=credentials('docker-hub')
+       DOCKER_HUB_SECRETS=credentials('dockerhub')
 
     }
     stages {
